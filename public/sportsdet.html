@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Participant Sports Events Details
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css2/dcss.css">
+    <link href="css2/vin.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <!--must be logged in to view this section -->
+    <div class="topnavn" id="mytopnavn">
+        <a href="stddash.html">Your Profile</a>
+        <a href="events.html">Events</a>
+        <a href="coordinators.html">Coordinators</a>
+        <a href="faq.html">FAQ</a>
+        <a href="feedback.html">Feedback</a>
+        <div class="dropdown">
+            <button class="dropbtn" style="background-color: brown;">Your Participation
+      <i class="fa fa-caret-down"></i>
+    </button>
+            <div class="dropdown-content">
+                <a href="seltech.html">Technical Events</a>
+                <a href="selnon.html">Non-technical Events</a>
+                <a href="projectdet.html">Projects</a>
+                <a href="sportsdet.html" class="active">Sports</a>
+            </div>
+        </div>
+        <button>Logout</button>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!--must be logged in to view this section ends -->
+    <footer style="position: fixed; left: 0; bottom:0;width: 100%; background-color: black; color: white; text-align: center;">
+        <!--footer -->
+        <h3 align="center">&copy; Copyright @ vinaysmh 2020 </h3>
+        <!--end footer -->
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mytopnavn");
+            if (x.className === "topnavn") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnavn";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

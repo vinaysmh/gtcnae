@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+    <div class="w3-container">
+        <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-blue">
+Centered and full-width</button>
+
+        <div id="Demo3" class="w3-hide w3-container w3-pale-green">
+            <button onclick="myFunction('Demo5')" class="w3-btn w3-block w3-green">
+Centered and full-width</button>
+            <div id="Demo5" class="w3-hide w3-container w3-yellow">
+                aa
+            </div>
+        </div>
+
+        <button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-red">
+Centered and full-width</button>
+
+        <div id="Demo4" class="w3-hide w3-container w3-pale-red">
+            a
+        </div>
+
+    </div>
+    <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

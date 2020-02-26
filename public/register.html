@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title Page-->
+    <title>GTC Non-Academic Events New User Registration</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor2/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor2/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor2/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor2/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css2/main.css" rel="stylesheet" media="all">
+    <link href="css2/vin.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="topnav">
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a href="index.html">Homepage</a>
+        </div>
+        <!-- Left-aligned links (default) -->
+        <a href="login.html">Login</a>
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+            <a href="coordinators.html">coordinators</a>
+            <a href="events.html">Events</a>
+        </div>
+    </div>
+    <!-- end header -->
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Non-Academic Event Registration Form</h2>
+                </div>
+                <div class="card-body">
+                    <h3 align="center"> * marked field are compulsary</h3>
+                    <br>
+                    <form method="POST" action="auth.js">
+                        <div class="form-row">
+                            <div class="name">Full Name * </div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" id="uname" required>
+                                    <label class="label--desc">Your Full Name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Class Roll no. * </div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" id="rollno" required>
+                                    <label class="label--desc">Your College Roll Number</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">father's Name * </div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" id="fname" required>
+                                    <label class="label--desc">Father's Full Name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Mobile no. * </div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="number" id="mobno" required>
+                                    <label class="label--desc">Your Mobile Number</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Father's Mobile no. * </div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="number" id="fmobno" required>
+                                    <label class="label--desc">Your Father's Mobile No.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Semester * </div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="number" id="sem" required>
+                                    <label class="label--desc">Current Semester</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Email *</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" id="semail" required>
+                                    <label class="label--desc">Your E-mail</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Password *</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="Password" id="oopsy" required>
+                                    <label class="label--desc">Create Your Login Password</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <input class="btn btn--radius-2 btn--green" type="submit" align="center" onclick="reg()">
+                            <br><br>
+                            <input class="btn btn--radius-2 btn--red" type="reset" align="center" onclick="a()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer -->
+    <div class="footer">
+        <p> &copy; Copyright @ vinaysmh 2020 </p>
+    </div>
+    <!--end footer -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.9.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.9.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script>
+        function a() {
+            alert("Are You sure to delete all input values");
+        }
+    </script>
+    <!-- Jquery JS-->
+    <script src="vendor2/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor2/select2/select2.min.js"></script>
+    <script src="vendor2/datepicker/moment.min.js"></script>
+    <script src="vendor2/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js2/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
